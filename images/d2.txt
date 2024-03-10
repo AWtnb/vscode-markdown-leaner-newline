@@ -1,0 +1,22 @@
+a: cursor is inside indent\n(before first non-whitespace character)
+b: insert linebreak\n(and whitespaces as needed)\ntocursor position
+c: line has non-whitespace text
+d: insert linebreak and indent (and symbol)\nto cursor position
+e: first non-whitespace character is markdown symbol
+f: insert linebreak and indent\nto cursor position
+g: markdown symbol is "> "
+h: insert linebreak, indent and symbol\nto cursor position
+i: line is indented
+j: outdent line
+k: clear line
+
+a -> b: yes
+a -> c: no
+c -> d: yes
+c -> e: no\n(line is only markdown symbol, all-whitespace or empty)
+e -> f: no
+e -> g: yes
+g -> h: yes
+g -> i: no
+i -> j: yes
+i -> k: no

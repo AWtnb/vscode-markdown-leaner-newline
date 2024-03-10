@@ -5,6 +5,10 @@
     - No extra changes are made except for the insertion of symbols and indentation.
     - If a line break occurs on a line beginning with `1.`, `1.` is inserted on the next line as well (not such as `2. `, `3. `, ...).
 
+## LOGIC
+
+![img](./images/d2.png)
+
 ---
 
 **Enjoy!**
